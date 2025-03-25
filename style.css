@@ -1,27 +1,249 @@
-.menu-acessibilidade{
-    position: fixed;
-    top:2rem;
-    right:20px;
-    z-index: 1000;
-     }
-    .rotacao-botao{ 
-        transform: rotate(-90deg);
-        transform-origin: right center;
-  }
-  .opcoes-acessibilidade{
-    margin-top:10px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --laranja-claro: #2a5cff;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #050404;
+    --alto-contraste-link: #0084ff;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+header {
+    background-color: #ffffff;
+}
+
+
+section {
+    padding-bottom: 5rem;
+}
+
+
+.nav-link {
+    color: #0026ff;
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    /* aula 3 */
+    background-image: url('');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* posicionamento para a imagem à esquerda */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+
+.esquerda-conteudo {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
-.rotacao-botao{ 
+
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fica acima das imagens do background */
+}
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--laranja-claro);
+}
+
+#galeria {
+    background-color: #ffffff;
+
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #000000;
+    padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #CB6D43;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #ffffff;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
     transform: rotate(-90deg);
     transform-origin: right center;
 }
-.opcoes-acessibilidade{
-    margin-top:10px;
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
-.opcoes-acessibilidade button{
+
+.opcoes-acessibilidade button {
     margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
+.simpleimg {
+    position: absolute;
+    right: 0;
+    left: 50px;
+    transform: translateY(-69%);
+    width: 450px;
+    height: 365px;
+    border-radius: 4pc;
+    border-style: inset;
+    border-color: #FF862A;
+}
+
+.titulo-cabeçalho {
+    font-family: "lemon", serif;
+    color: #23aeff;
+    text-align: right;
+    font-size: 35px;
+}
+
+.info {
+    transform: translatey(+200px);
+}
+
+.img2 {
+    height: 400px;
+    width: 400px;
+    transform: translateX(-445px);
+    border-radius: 20%;
+    border-style: ridge;
+    color: #23aeff;
+    border-color: #0026ff;
+}
+
+.p-2 {
+    color: #23aeff;
+    transform: translateY(-95%);
+    font-style: italic;
+    font-size: 20px;
+}
+
+.text1 {
+    width: 65%;
+    float: left;
+    transform: translateY(-156px);
+    font-size: 25px;
+    font-style: italic;
+    color: #2369ff;
+}
+
+.img3text {
+    transform: translateY(-455px);
+    color: #0084ff;
+    font-family: "lemon", serif;
 }
